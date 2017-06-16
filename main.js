@@ -66,8 +66,8 @@ const init = (handlers) => {
 };
 
 if (typeof window.swipeDetection !== 'undefined') {
-  console.log('Global variable "swipeDetection" found, we will not override it.');
-  console.log('Swipe Detection *not* loaded!');
+  console.warn('Global variable "swipeDetection" found, we will not override it.');
+  console.warn('Swipe Detection *not* loaded!');
 } else {
   window.swipeDetection = {init};
 }
